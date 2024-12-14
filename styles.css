@@ -1,0 +1,572 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 80px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #4C60DA;
+}
+
+.Login button {
+  background-color: #6777EF;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Login button:hover {
+  background-color: #4C60DA;
+}
+
+/* Cover Image */
+.cover {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.section1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.welcome-text {
+  position: absolute;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 3px solid white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* School Info Section */
+.school-info {
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: flex-start;    /* Align the items to the top */
+  padding: 40px 5%;
+}
+
+.info-container {
+  display: flex;
+  align-items: flex-start;    /* Align the items to the top */
+  max-width: 100%;
+  gap: 30px;
+}
+
+.school-image {
+  flex: 0 0 45%; /* Image width: 45% */
+  max-width: 30%;
+  max-height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-text {
+  flex: 1 1 55%; /* Text takes remaining space */
+  margin-top: 40px;
+}
+
+.info-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Heading between sections */
+.section-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+.section-heading2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 10%;
+}
+
+
+
+.card {
+  width: 25%;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card .image img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card .title {
+  text-align: center;
+  padding: 10px;
+}
+
+.card h1 {
+  font-size: 20px;
+}
+
+.card .des {
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card button:hover {
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+/* Section 5: Admission Form */
+.admission-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  background-color: #f9f9f9;
+  margin: 50px auto;
+}
+
+.admission-section .container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.admission-section header {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admission-section .form .input-box {
+  margin-top: 20px;
+}
+
+.admission-section .form .input-box label {
+  color: #333;
+  font-weight: 500;
+}
+
+.admission-section .form .input-box input,
+.admission-section .form .select-box {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+}
+
+.admission-section .form .input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.admission-section .form .column {
+  display: flex;
+  gap: 15px;
+}
+
+.admission-section .form .gender-box {
+  margin-top: 20px;
+}
+
+.admission-section .form .gender-box h3 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.admission-section .form .gender-option {
+  display: flex;
+  gap: 50px;
+}
+
+.admission-section .form .gender-option .gender {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admission-section .form .gender-option .gender input {
+  accent-color: rgb(130, 106, 251);
+  cursor: pointer;
+}
+
+.admission-section .form .gender-option .gender label {
+  color: #707070;
+  cursor: pointer;
+}
+
+.admission-section .form .address .select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+
+.admission-section .form button {
+  width: 100%;
+  height: 55px;
+  background-color: #6777EF;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admission-section .form button:hover {
+  background-color: #4C60DA;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-container div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: red;
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.footer-contact p i {
+  margin-right: 10px;
+  color: red;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  background-color: #444;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: red;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Contact Card Section */
+.contact-card-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  gap: 40px;
+}
+
+.contact-card {
+  width: 1600px; /* Wider card */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.contact-card-header {
+  background-color: #2e3996; /* Dark blue header */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-card-body {
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.contact-card-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-card-icon {
+  flex: 0 0 5%; /* Icon takes 5% width */
+  font-size: 1.1rem;
+  padding-left: 50px;
+  color: #555;
+  margin-right: 10px;
+}
+
+.contact-card-label {
+  flex: 0 0 30%; /* Labels take 30% width */
+  font-weight: bold;
+  text-align: left;
+  color: #555;
+}
+
+.contact-card-info {
+  flex: 1; /* Information takes the rest of the space */
+  text-align: right;
+  padding-right: 40px;
+  color: #333;
+  word-break: break-word; /* Ensures long text wraps neatly */
+}
+/* For History */
+.abouttext {
+  line-height: 1.8; 
+  font-size: 1rem; 
+  color: #333; 
+  font-family: sans-serif;
+  margin: 20px; 
+  text-align: justify; 
+  margin-top: 40px;
+  
+}
+
+.abouttext p {
+  margin-bottom: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-card-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-card {
+      width: 100%;
+  }
+
+  .contact-card-row {
+      flex-direction: column; /* Stack icon, label, and info on smaller screens */
+      align-items: flex-start;
+  }
+
+  .contact-card-label {
+      margin-bottom: 4px;
+  }
+}
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-container div {
+      text-align: center;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .admission-section .form .column {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .admission-section .form .gender-option {
+    gap: 20px;
+  }
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+
+/* Responsiveness for navbar */
+@media (max-width: 768px) {
+  .navbar nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .navbar nav ul li {
+      margin: 10px 0;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
