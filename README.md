@@ -1,7 +1,7 @@
 # Student Management System
 *Student management system is basically a complete solution for students. That manages students through three portals eg:**(Student Portal**, **Teacher Portal**, **Admin Portal).***
 ## Technology Used
-# Fontend
+# Frontend
 - HTML
 - CSS
 - Bootstrap
